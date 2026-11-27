@@ -1,0 +1,33 @@
+{
+  "name": "showcase",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare": "resux prepare",
+    "dev": "resux dev",
+    "build": "resux build",
+    "preview": "resux preview",
+    "start": "resux start",
+    "inspect": "resux inspect",
+    "typecheck": "vue-tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "resuxjs": "^0.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.8",
+    "vue-tsc": "^3.3.8"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "overrides": {
+    "undici": "^6.21.1",
+    "nitropack": {
+      "rollup-plugin-visualizer": "6.0.11"
+    }
+  }
+}
